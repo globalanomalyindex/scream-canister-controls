@@ -1,0 +1,50 @@
+.sheet {
+  --bz-glide:cubic-bezier(0.22, 0, 0.78, 1);
+  --ed-fade:150ms;
+  --ez-press:steps(2, jump-start);
+  --ed-press:83.333ms;
+  --ez-release:steps(3, jump-start);
+  --ed-release:125ms;
+  --ez-snap:steps(1, jump-start);
+  --ed-snap:41.667ms;
+  --ez-arrive:steps(6, jump-start);
+  --ed-arrive:250ms;
+  --ez-arrive-4:steps(4, jump-start);
+  --ed-arrive-4:166.667ms;
+  --ez-rise:steps(4, jump-start);
+  --ed-rise:166.667ms;
+  --ez-drop:steps(5, jump-start);
+  --ed-drop:208.333ms;
+  --ez-drop-3:steps(3, jump-start);
+  --ed-drop-3:125ms;
+  --ez-glide:steps(7, jump-start);
+  --ed-glide:291.667ms;
+  --ez-run:steps(5, jump-start);
+  --ed-run:250ms;
+  --ez-overshoot:steps(7, jump-start);
+  --ed-overshoot:291.667ms;
+  --ez-overshoot-soft:steps(7, jump-start);
+  --ed-overshoot-soft:291.667ms;
+  --ez-settle:steps(7, jump-start);
+  --ed-settle:291.667ms;
+  --ez-settle-3:steps(3, jump-start);
+  --ed-settle-3:125ms;
+}
+@supports (animation-timing-function:linear(0, 1)) {
+  .sheet {
+    --ez-press:linear(0.661 0% 50%, 1 50% 100%);
+    --ez-release:linear(0.3355 0% 33.333%, 0.6335 33.333% 66.667%, 1 66.667% 100%);
+    --ez-snap:steps(1, jump-start);
+    --ez-arrive:linear(0.2089 0% 16.667%, 0.405 16.667% 33.333%, 0.5873 33.333% 50%, 0.7537 50% 66.667%, 0.8997 66.667% 83.333%, 1 83.333% 100%);
+    --ez-arrive-4:linear(0.3086 0% 25%, 0.5873 25% 50%, 0.8298 50% 75%, 1 75% 100%);
+    --ez-rise:linear(0.4277 0% 25%, 0.7363 25% 50%, 0.9302 50% 75%, 1 75% 100%);
+    --ez-drop:linear(0.1927 0% 20%, 0.3531 20% 40%, 0.5416 40% 60%, 0.757 60% 80%, 1 80% 100%);
+    --ez-drop-3:linear(0.3531 0% 33.333%, 0.6459 33.333% 66.667%, 1 66.667% 100%);
+    --ez-glide:linear(0.0809 0% 14.286%, 0.2326 14.286% 28.571%, 0.4087 28.571% 42.857%, 0.5913 42.857% 57.143%, 0.7674 57.143% 71.429%, 0.9191 71.429% 85.714%, 1 85.714% 100%);
+    --ez-run:linear(0.1667 0% 16.667%, 0.3333 16.667% 33.333%, 0.5 33.333% 50%, 0.6667 50% 83.333%, 1 83.333% 100%);
+    --ez-overshoot:linear(0.7376 0% 14.286%, 1.1196 14.286% 28.571%, 1.1744 28.571% 42.857%, 1.1192 42.857% 57.143%, 1.0577 57.143% 71.429%, 1.0165 71.429% 85.714%, 1 85.714% 100%);
+    --ez-overshoot-soft:linear(0.6281 0% 14.286%, 0.9892 14.286% 28.571%, 1.0814 28.571% 42.857%, 1.0682 42.857% 57.143%, 1.0363 57.143% 71.429%, 1.0115 71.429% 85.714%, 1 85.714% 100%);
+    --ez-settle:linear(0.3931 0% 14.286%, 0.6657 14.286% 28.571%, 0.8373 28.571% 42.857%, 0.9336 42.857% 57.143%, 0.9799 57.143% 71.429%, 0.9969 71.429% 85.714%, 1 85.714% 100%);
+    --ez-settle-3:linear(0.7329 0% 33.333%, 0.9686 33.333% 66.667%, 1 66.667% 100%);
+  }
+}
