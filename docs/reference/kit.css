@@ -5586,6 +5586,9 @@
       transparent 0),
     var(--sheet) !important;
 }
+.cog::after {
+  display: none !important;
+}
 :is(.a-knob, .cog)::before {
   -webkit-mask: none !important;
   mask: none !important;
