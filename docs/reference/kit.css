@@ -5589,6 +5589,24 @@
 .cog::after {
   display: none !important;
 }
+.sw {
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+.sw-track {
+  border-radius: 999px !important;
+}
+.sw-track::before,
+.sw-track::after {
+  -webkit-mask-box-image: none !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+  border-radius: 999px !important;
+  inset: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+}
 :is(.a-knob, .cog)::before {
   -webkit-mask: none !important;
   mask: none !important;
