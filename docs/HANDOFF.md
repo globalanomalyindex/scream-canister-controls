@@ -32,7 +32,6 @@ A button and control set based on the scream canisters from *Monsters, Inc.* and
 | `--tile-off` | `#34303F` | Disabled tile |
 | `--per` | `#9890E9` | Notation lines (diagrams only) |
 | `--paper` | `#FCFBFB` | Lockout tag, slips |
-| `--card-face` | `#E6E8F6` | Card mode face |
 
 Laugh mode swaps `--fill` to `--green`. Nothing else changes.
 
@@ -61,7 +60,7 @@ Laugh mode swaps `--fill` to `--green`. Nothing else changes.
 ### Focus
 
 - `outline: 2.5px solid var(--focus-color); outline-offset: 3px;`
-- Focus color: `--yel` on dark grounds, `--navy` on the light Paper ground, `#F4E28A` on Chalk.
+- Focus color: `--yel` on dark grounds, `--navy` on light grounds.
 - Every control shows it, in every browser. Focus never moves or resizes the control.
 
 ## 3. Components
@@ -206,9 +205,6 @@ Under `prefers-reduced-motion: reduce`:
 
 | Mode | Meaning | Look |
 | --- | --- | --- |
-| Painted | Live: actions commit | Default |
-| Chalk | Practice: results show, then the board wipes itself. Nothing is sent. | Chalk lines on a dark board |
-| Card | Records: each seal leaves a card you can return to undo | Controls printed on cards |
 | Scream / Laugh | Energy theme | Laugh swaps the fill to green |
 
 ## 7. Accessibility checklist
